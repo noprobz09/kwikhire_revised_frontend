@@ -12,8 +12,8 @@ export class CardComponent implements OnInit {
   @Input() blockClass: string;
   @Input() cardClass: string;
   @Input() classHeader = false;
-  cardToggle = 'expanded';
-  cardClose = 'open';
+  // cardToggle = 'expanded';
+  // cardClose = 'open';
   constructor() { }
 
   ngOnInit() {
