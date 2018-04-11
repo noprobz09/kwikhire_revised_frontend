@@ -1,12 +1,15 @@
 <div class="card" [ngClass]="cardClass">
-  <div class="card-header" *ngIf="title">
-    <h5>{{ title }}</h5>
-    <span *ngIf="!classHeader">{{ headerContent }}</span>
-    <span *ngIf="classHeader">
-      <ng-content select=".code-header"></ng-content>
-    </span>
-    
-  </div>
+    <div class="card-header" *ngIf="title">
+        <h5>{{ title }}</h5>
+        <span *ngIf="!classHeader">{{ headerContent }}</span>
+        <span *ngIf="classHeader">
+            <ng-content select=".code-header"></ng-content>
+        </span>
 
- 
+    </div>
+    <div class="clearfix">
+        <div class="card-body" [ngClass]="blockClass">
+            <ng-content></ng-content>
+        </div>
+    </div>
 </div>

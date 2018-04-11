@@ -4,7 +4,6 @@ import {Component, OnInit, Input, ViewEncapsulation} from '@angular/core';
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css'],
-  encapsulation: ViewEncapsulation.None
 })
 export class CardComponent implements OnInit {
   @Input() headerContent: string;
@@ -12,12 +11,11 @@ export class CardComponent implements OnInit {
   @Input() blockClass: string;
   @Input() cardClass: string;
   @Input() classHeader = false;
-  // cardToggle = 'expanded';
-  // cardClose = 'open';
+  
   constructor() { }
 
   ngOnInit() {
   }
-
+                 
  
 }

@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterviewCreateComponent implements OnInit {
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
+    ngOnInit() {
+    }
+
+    submit(f){
+ 
+    // if(f.valid){
+    //     if(this.step < 3){
+    //     this.step += 1;
+    //     this.goNextForm(this.step);
+
+    //     }else{
+    //     //interview service save here
+
+    //     }
+    // }
   }
 
 }
